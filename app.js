@@ -1,12 +1,22 @@
 const billAmount = document.querySelector("#bill-amount");
+const nextButton = document.querySelector("#next-button");
 const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const errorMessage = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
+const hiddenItems = document.querySelectorAll(".hide");
 
 const availableNotes = [2000,500,200,100,50,20,10,5,1];
 
-checkButton.addEventListener("click", function validate() {
+nextButton.addEventListener("click", function onNextValidate() {
+    if (billAmount.value > 0) {
+        for (hiddenItem of hiddenItems) {
+            hiddenItem.style.display = "block";
+        }
+    }
+});
+
+checkButton.addEventListener("click", function onCheckValidate() {
     errorMessage.style.display = "none";
     if (billAmount.value > 0){
         if(cashGiven.value >= billAmount.value){

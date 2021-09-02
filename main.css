@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
 .container {
     display: flex;
@@ -5,4 +6,76 @@
     width: 50vw;
     margin: auto;
     text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hide {
+    display: none;
+}
+
+#error-message {
+    display: none;
+}
+
+.description {
+    width: 30vw;
+    margin: auto;
+    padding: 1vw 0vw;
+}
+
+label {
+    font-weight: bold;
+    padding: 0.5vw 0vw;
+}
+
+input {
+    width: 192px;
+    margin: auto;
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    text-indent: 5px;
+}
+
+button {
+    width: 200px;
+    margin: 0.5vw auto;
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0.1, 0.5);
+    cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0.5px;
+  table-layout: fixed;
+}
+
+caption {
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+td, th {
+  border: 2px solid white;
+  text-align: center;
+  width: 120px;
+  height: 2rem;
+}
+
+th {
+    width: 10vw;
+}
+
+td {
+    width: 4vw;
 }
